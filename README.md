@@ -1,4 +1,5 @@
 # Reproducible Research Fundamentals 2024
+Training GitFlow session
 ## Using GitHub for Collaborative Research - README
 
 ## Introduction
