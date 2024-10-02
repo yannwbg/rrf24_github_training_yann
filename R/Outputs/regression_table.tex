@@ -1,0 +1,43 @@
+
+\begin{table}[!htbp] \centering 
+  \caption{Regression Table} 
+  \label{} 
+\begin{tabular}{@{\extracolsep{5pt}}lccc} 
+\\[-1.8ex]\hline 
+\hline \\[-1.8ex] 
+ & \multicolumn{3}{c}{\textit{Dependent variable:}} \\ 
+\cline{2-4} 
+\\[-1.8ex] & \multicolumn{3}{c}{Food Consumption (USD)} \\ 
+\\[-1.8ex] & (1) & (2) & (3)\\ 
+\hline \\[-1.8ex] 
+ Treatment & $-$15.114$^{**}$ & $-$19.053$^{**}$ & $-$16.489$^{**}$ \\ 
+  & (7.687) & (7.615) & (7.052) \\ 
+  & & & \\ 
+ Crop Damage &  & 51.708$^{***}$ & 29.756$^{***}$ \\ 
+  &  & (7.898) & (7.422) \\ 
+  & & & \\ 
+ Drought/Flood &  & $-$0.057 & 12.349$^{*}$ \\ 
+  &  & (8.002) & (7.462) \\ 
+  & & & \\ 
+ factor(district)2 &  &  & 148.393$^{***}$ \\ 
+  &  &  & (8.687) \\ 
+  & & & \\ 
+ factor(district)3 &  &  & 107.164$^{***}$ \\ 
+  &  &  & (9.457) \\ 
+  & & & \\ 
+ Constant & 235.414$^{***}$ & 210.595$^{***}$ & 117.680$^{***}$ \\ 
+  & (5.438) & (7.482) & (8.848) \\ 
+  & & & \\ 
+\hline \\[-1.8ex] 
+Clustering by Village & No & No & Yes \\ 
+Observations & 1,758 & 1,758 & 1,758 \\ 
+R$^{2}$ & 0.002 & 0.028 & 0.168 \\ 
+Adjusted R$^{2}$ & 0.002 & 0.026 & 0.166 \\ 
+Residual Std. Error & 161.145 (df = 1756) & 159.163 (df = 1754) & 147.300 (df = 1752) \\ 
+F Statistic & 3.866$^{**}$ (df = 1; 1756) & 16.663$^{***}$ (df = 3; 1754) & 70.850$^{***}$ (df = 5; 1752) \\ 
+\hline 
+\hline \\[-1.8ex] 
+\textit{Note:}  & \multicolumn{3}{r}{$^{*}$p$<$0.1; $^{**}$p$<$0.05; $^{***}$p$<$0.01} \\ 
+ & \multicolumn{3}{r}{Standard errors in parentheses} \\ 
+\end{tabular} 
+\end{table} 

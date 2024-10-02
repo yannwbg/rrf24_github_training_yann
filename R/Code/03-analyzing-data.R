@@ -3,16 +3,16 @@
 # 03. Data Analysis
 
 # Libraries
-# library(haven)
-# library(dplyr)
-# library(modelsummary)
-# library(stargazer)
-# library(ggplot2)
-# library(tidyr)
+library(haven)
+library(dplyr)
+library(modelsummary)
+library(stargazer)
+library(ggplot2)
+library(tidyr)
 
 # Load data 
 #household level data
-data_path <- "ADD-YOUR-PATH"
+data_path <- "C:/Users/wb566769/OneDrive - WBG/Documents/GitHub/DataWork/Data"
 
 # Load data 
 #household level data
@@ -65,7 +65,7 @@ model1 <- lm(food_cons_usd_w ~ treatment, data = hh_data)
 model2 <- lm(food_cons_usd_w ~ treatment + crop_damage + drought_flood, data = hh_data)
 
 # Model 3: Add clustering by village
-model3 <- lm(food_cons_usd_w ~ treatment + crop_damage + drought_flood, data = hh_data)
+model3 <- lm(food_cons_usd_w ~ treatment + crop_damage + drought_flood + factor(district), data = hh_data)
 
 # Create regression table using stargazer
 stargazer(
