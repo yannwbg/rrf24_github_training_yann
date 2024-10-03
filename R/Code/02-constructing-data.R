@@ -5,7 +5,7 @@
 library(tidyverse)
 # RRF - 2024 - Construction
 
-data_path <- "C:/Users/wb566769/OneDrive - WBG/Documents/GitHub/DataWork/Data"
+#data_path <- "your path"
 
 # Preliminary - Load data
 # Load HH data
@@ -114,7 +114,8 @@ hh_mem_collapsed <- mem_data %>%
 # Calculate the total number of medical facilities
 secondary_data <- secondary_data %>%
     mutate(n_medical = rowSums(select(., n_clinic, n_hospital), 
-                               na.rm = TRUE)) 
+                               na.rm = TRUE)) %>% 
+    rename(district = adm2_en)
 
 # Apply label to the new column
 var_label(secondary_data$n_medical) <- "No. of medical facilities"
