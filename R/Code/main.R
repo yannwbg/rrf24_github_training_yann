@@ -24,7 +24,11 @@ library(RColorBrewer) # color palettes
 # this is the second root of the project, the first root is the code whose directory 
 # is already being handled by the rstudio project.
 
+# Original path
 data_path <- "C:/Users/wb566769/OneDrive - WBG/Documents/GitHub/DataWork/Data"
+
+# My path
+data_path <- "C:/Users/wb529026/OneDrive - WBG/Documents/Courses/RRF 24/DataWork/Data"
 
 # Run the R scripts ----
 
